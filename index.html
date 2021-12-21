@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <script>
+function currency() {
+var convert = document.getElementById("number").value ;
+document.getElementById("number2").value = (convert*0.85).toFixed(2);
+}  
+
+function currency2() {
+var convert2 = document.getElementById("number2").value;
+document.getElementById("number").value=(convert2*1.1729).toFixed(2);
+}   
+
+</script>
+    <head>
+        <title> Suleski Lab 3</title>
+        <style>
+       .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: green;} 
+.button2 {background-color: green;} 
+
+        </style>
+    </head>
+    <body>
+      <h1> Currency Converter </h1>
+        <p> Dollar: <input type = "text" id="number">
+        <button onclick="currency()" class = "button button1" > Convert </button> </p>
+
+ <p> Euro: <input type = "text" id="number2">
+ <button onclick = "currency2()" class = "button button2" > Convert </button>
+ </p>
+
+    </body>
+</html>
